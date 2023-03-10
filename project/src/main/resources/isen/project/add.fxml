@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="276.0" layoutY="302.0" prefHeight="344.0" prefWidth="366.0" spacing="20.0">
+         <children>
+            <TextField fx:id="add_ID" text="ID" />
+            <TextField fx:id="add_LastName" text="Last Name" />
+            <TextField fx:id="add_FirstName" text="First Name" />
+            <TextField fx:id="add_Nickname" text="Nickname" />
+            <TextField fx:id="add_Phone" text="Phone number" />
+            <TextField fx:id="add_Address" layoutX="10.0" layoutY="112.0" text="Address" />
+            <TextField fx:id="add_Email" layoutX="10.0" layoutY="138.0" text="Email address" />
+            <TextField fx:id="add_Birth" layoutX="10.0" layoutY="164.0" text="Birth date" />
+         </children>
+      </VBox>
+      <VBox layoutX="29.0" layoutY="14.0" prefHeight="270.0" prefWidth="879.0">
+         <children>
+            <TableView fx:id="add_Table" prefHeight="271.0" prefWidth="742.0">
+              <columns>
+                <TableColumn fx:id="add_colID" prefWidth="47.20001411437988" text="ID" />
+                <TableColumn fx:id="add_colLastName" prefWidth="88.80001068115234" text="Last Name" />
+                  <TableColumn fx:id="add_colFirstName" prefWidth="89.5999755859375" text="First Name" />
+                  <TableColumn fx:id="add_colNickName" prefWidth="75.0" text="Nickname" />
+                  <TableColumn fx:id="add_colPhone" prefWidth="114.39996337890625" text="Phone" />
+                  <TableColumn fx:id="add_colAddress" prefWidth="199.20010375976562" text="Address" />
+                  <TableColumn fx:id="add_colEmail" prefWidth="172.79998779296875" text="Email" />
+                  <TableColumn fx:id="add_colBirthDate" prefWidth="93.5999755859375" text="Birth date" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button fx:id="add_Back" layoutX="841.0" layoutY="621.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="add_Add" layoutX="797.0" layoutY="300.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" text="ADD" />
+   </children>
+</AnchorPane>
